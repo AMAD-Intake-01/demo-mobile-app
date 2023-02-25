@@ -5,7 +5,7 @@ import { TextInput } from 'react-native-paper';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { DatePickerInput } from 'react-native-paper-dates';
 
-export default function Login() {
+export default function Login({ navigation }) {
 
     //this is a state
     const [email, setEmail] = useState('');
@@ -46,7 +46,7 @@ export default function Login() {
                 inputMode="start"
             />
 
-            <Button mode="outlined" onPress={onLogin} style={styles.btn}>
+            <Button mode="outlined" onPress={() => { navigation.navigate('Home')}} style={styles.btn}>
                 Sign In
             </Button>
         </View>

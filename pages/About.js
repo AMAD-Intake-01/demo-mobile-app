@@ -3,7 +3,7 @@ import React from 'react'
 import { Button } from 'react-native-paper';
 import RoundButton from './RoundButton';
 
-export default function About() {
+export default function About({ navigation }) {
     return (
         <View style={{ flex: 1 }}>
             <View style={{ flex: 1, flexDirection: 'row',gap:10 }}>
